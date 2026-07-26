@@ -248,21 +248,22 @@ a:focus-visible, button:focus-visible{
 .price-tag{ font-family: var(--font-mono); font-size: 0.9rem; margin-top: 0.5rem; display: block; }
 
 .ink-stamp{
-  position: absolute; top: 40%; left: 50%;
-  transform: translate(-50%, -50%) rotate(-12deg);
-  border: 3px double var(--terracotta-deep);
+  position: absolute; top: 45%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-14deg);
+  border: 4px solid #c81e1e;
   border-radius: var(--radius-sm);
-  color: var(--terracotta-deep);
-  padding: 0.3rem 0.9rem;
+  background: rgba(255,251,240,0.95);
+  color: #c81e1e;
+  padding: 0.5rem 1.3rem;
   font-family: var(--font-mono);
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  font-size: 0.85rem;
-  opacity: 0.85;
-  mix-blend-mode: multiply;
+  font-size: 1.4rem;
+  white-space: nowrap;
   pointer-events: none;
   z-index: 2;
+  box-shadow: 0 6px 14px -4px rgba(0,0,0,0.35);
 }
 
 /* ---------- flip card (certificate) ---------- */
