@@ -6,6 +6,8 @@ import { MiscIcon } from "@/components/MiscIcons";
 import { recentlySold, journalArticles } from "@/lib/data";
 import { getPieces, getArchiveCount } from "@/lib/pieces";
 
+export const revalidate = 30;
+
 export default async function HomePage() {
   const [pieces, archiveCount] = await Promise.all([getPieces(), getArchiveCount()]);
   const hero = pieces.find((p) => p.featured) || pieces[0];

@@ -3,6 +3,8 @@ import { journalArticles } from "@/lib/data";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
+export const revalidate = 30;
+
 export default async function sitemap() {
   const pieces = await getPieces();
 

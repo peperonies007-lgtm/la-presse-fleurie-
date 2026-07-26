@@ -3,6 +3,8 @@ import { SpecimenCard } from "@/components/SpecimenCard";
 import AddToCartButton from "@/components/AddToCartButton";
 import { getPieces, getPieceBySlug } from "@/lib/pieces";
 
+export const revalidate = 30;
+
 export async function generateStaticParams() {
   const pieces = await getPieces();
   return pieces.map((p) => ({ slug: p.slug }));

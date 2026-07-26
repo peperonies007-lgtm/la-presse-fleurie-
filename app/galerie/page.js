@@ -7,6 +7,8 @@ export const metadata = {
   description: "Toutes les créations florales séchées actuellement disponibles, pièces uniques.",
 };
 
+export const revalidate = 30;
+
 export default async function GaleriePage() {
   const [pieces, archiveCount] = await Promise.all([getPieces(), getArchiveCount()]);
 
