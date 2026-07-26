@@ -23,7 +23,7 @@ export function SpecimenCard({ piece, size = "normal", onWaitlist, className = "
   const hasCertificate = isFeatured && piece.certificat;
 
   const plate = (
-    <div className="plate" style={{ "--plate-color": TAPE_COLOR[piece.icon] }}>
+    <div className="plate" style={{ "--plate-color": "#F3EDDF" }}>
       {isSold && <div className="ink-stamp">Vendue</div>}
       <div className={`view-illustration${!showPhoto ? " active" : ""}`}>
         <FlowerIcon name={piece.icon} />

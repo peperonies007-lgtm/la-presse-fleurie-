@@ -24,7 +24,7 @@ export default function PanierClient({ pieces }) {
         <>
           {items.map((piece) => (
             <div className="cart-row" key={piece.slug}>
-              <div className="plate" style={{ "--plate-color": "var(--terracotta)" }}>
+              <div className="plate" style={{ "--plate-color": "#F3EDDF" }}>
                 <div className="view-illustration active">
                   <FlowerIcon name={piece.icon} />
                 </div>

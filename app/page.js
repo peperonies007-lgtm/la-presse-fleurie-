@@ -14,7 +14,6 @@ export default async function HomePage() {
   return (
     <>
       <section className="hero">
-        <span className="ghost-text" aria-hidden="true">{hero.latin}</span>
         <div className="container hero-grid">
           <div>
             <span className="eyebrow">Créations florales séchées — pièces uniques</span>

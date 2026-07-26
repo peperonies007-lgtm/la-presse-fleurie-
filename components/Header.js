@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import CarnetModal from "./CarnetModal";
 import LoginModal from "./LoginModal";
+import Logo from "./Logo";
 import { useCart } from "./CartContext";
 import { createClient } from "@/lib/supabase/client";
 import { signOut } from "@/lib/actions";
@@ -41,8 +42,8 @@ export default function Header() {
     <>
       <header className="site">
         <div className="container nav-row">
-          <Link href="/" className="wordmark">
-            La Presse <em>Fleurie</em>
+          <Link href="/" className="wordmark" style={{ display: "flex", alignItems: "center" }}>
+            <Logo variant="horizontal" size={32} />
           </Link>
           <nav className="links">
             <Link href="/galerie">Galerie</Link>
