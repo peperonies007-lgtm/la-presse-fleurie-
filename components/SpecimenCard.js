@@ -46,7 +46,11 @@ export function SpecimenCard({ piece, size = "normal", onWaitlist, className = "
     <div className="plate" style={{ "--plate-color": "#F3EDDF" }}>
       {isSold && <div className="ink-stamp">Vendue</div>}
       <div className={`view-illustration${!showPhoto ? " active" : ""}`}>
-        <FlowerIcon name={piece.icon} />
+        {piece.illustration ? (
+          <img src={piece.illustration} alt={piece.latin} className="illustration-img" />
+        ) : (
+          <FlowerIcon name={piece.icon} />
+        )}
       </div>
       <div className={`view-photo${showPhoto ? " active" : ""}`}>
         <img src={DEMO_PHOTO} alt={`Photo de démonstration — ${piece.latin}`} />
