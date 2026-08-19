@@ -27,6 +27,9 @@
 
 ## Personnalité / émotion dominante
 
+> La série n'a aucun dialogue parlé (voir `/00-bible/bible-artistique.md`) : ces éléments remplacent la "voix" du personnage et doivent suffire à le rendre expressif et reconnaissable sans un mot.
+
 - **Traits de personnalité** : [À compléter — 3 à 5 adjectifs clés]
 - **Émotion dominante** : [À compléter — l'émotion par défaut qui doit transparaître dans la posture et l'expression du personnage au repos]
-- **Tics de mouvement ou d'expression** : [À compléter — optionnel, une manie visuelle propre au personnage]
+- **Tics de mouvement ou d'expression** : [À compléter — une manie visuelle propre au personnage, clairement identifiable (geste récurrent, posture caractéristique)]
+- **Vocalisations non-verbales** : [À compléter — sons/onomatopées propres au personnage pour exprimer ses émotions (grognement, sifflement, type de rire...), à utiliser en Phase 6]

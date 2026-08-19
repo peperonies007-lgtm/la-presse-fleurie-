@@ -2,7 +2,18 @@
 
 ## Concept de la série (en une phrase)
 
-Un petit village vit caché dans les branches d'un vieil érable du Japon en bonsaï, posé sur un rebord de fenêtre, et chaque épisode raconte une mini-aventure du quotidien de ses habitants.
+Un petit village vit caché dans les branches d'un vieil érable du Japon en bonsaï, posé sur un rebord de fenêtre, et chaque épisode raconte, sans un mot de dialogue, une mini-aventure du quotidien de ses habitants.
+
+## Règle fondamentale : zéro dialogue parlé
+
+La série se raconte entièrement sans dialogue parlé — uniquement par le langage corporel, les expressions, les onomatopées et les bruitages. C'est un choix stratégique autant qu'artistique (validé par des références comme *Larva*, diffusée dans plus de 180 pays sans une seule ligne de dialogue) :
+- **Portée internationale** : une série sans dialogue n'a besoin d'aucun doublage/sous-titrage pour être comprise partout — le geste et l'expression sont un langage universel.
+- **Économie de production** : pas de synchronisation labiale à animer frame par frame, ce qui est particulièrement coûteux en génération IA + stop-motion.
+- **Conséquences pour l'écriture et le design** :
+  - Chaque épisode doit se comprendre uniquement par l'image et le son (voir `/07-son/technique-son-et-rythme.md`) — jamais par une réplique.
+  - Les personnages communiquent par gestes, regards, expressions exagérées et sons non-verbaux (grognements, exclamations, onomatopées).
+  - Les fiches personnages doivent définir des tics d'expression/gestes bien identifiables (voir `/00-bible/fiche-personnage-template.md`), qui remplacent une "voix" au sens propre.
+  - Le découpage plan par plan (`/01-scripts/template-episode.md`) doit décrire des actions et réactions physiques claires, jamais des lignes de dialogue.
 
 ## Univers commun
 

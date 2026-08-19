@@ -76,3 +76,4 @@ Mouvement simple à réussir en un seul lot car aucune alternance gauche/droite 
 - **Traits de personnalité** : protecteur, organisé, sérieux, loyal, a du mal à lâcher le contrôle
 - **Émotion dominante** : vigilance bienveillante — sourcils légèrement froncés par sérieux, mais regard toujours doux ; posture stable même dans l'inquiétude
 - **Tics de mouvement ou d'expression** : serre son bâton noueux à deux mains quand il est stressé ; tapote le sol du pied quand il réfléchit
+- **Vocalisations non-verbales** : grognement grave et bref pour marquer son désaccord ; soupir sonore quand il cède ; petit raclement de gorge pour rappeler le groupe à l'ordre

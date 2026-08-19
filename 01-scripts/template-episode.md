@@ -25,13 +25,15 @@
 | 8 | | | | | |
 
 > Colonnes :
+> - **Action** : la série n'a aucun dialogue parlé (voir `/00-bible/bible-artistique.md`) — décrire uniquement des actions et réactions physiques (geste, expression, regard), jamais une ligne de dialogue.
 > - **Mouvement utilisé / Nouveau mouvement à créer** : indiquer soit le nom du cycle existant dans `/04-mouvements/[personnage]/`, soit préciser "NOUVEAU — [description]" si le mouvement doit être généré spécifiquement pour ce plan (à stocker ensuite dans `/05-generations/episode-XX/plan-XX/`).
 > - **Cadrage** : plan large / plan moyen / plan rapproché / gros plan + angle si pertinent.
-> - **Durée estimée** : en secondes ; la somme de tous les plans doit être ≈ 90 secondes.
+> - **Durée estimée** : en secondes ; la somme de tous les plans doit être ≈ 90 secondes ; varier les durées selon le rythme voulu plutôt que répartir uniformément (voir `/07-son/technique-son-et-rythme.md`).
 
 ## Vérification finale
 
 - [ ] Somme des durées ≈ 90 secondes
 - [ ] Entre 6 et 10 plans au total
+- [ ] Aucune ligne de dialogue dans la colonne Action — uniquement du physique/visuel
 - [ ] Tous les mouvements "NOUVEAU" identifiés sont listés pour génération en Phase 4
 - [ ] Cohérence des personnages présents avec la bible artistique (`/00-bible/`)
