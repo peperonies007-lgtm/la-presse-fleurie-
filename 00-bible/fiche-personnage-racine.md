@@ -58,6 +58,19 @@ PERSONNAGE : Racine, un petit gnome des bois en pâte à modeler (claymation), s
 
 À ranger dans `/04-mouvements/racine/marcher/frame-01.png` à `frame-04.png` (rogner le badge scintillant Gemini avant export).
 
+### Saluer (4 frames) — validé, réussi du premier coup
+
+| Frame | Contenu | Origine |
+|---|---|---|
+| frame-01 | Bras libre baissé, position de repos | Génération dédiée (batch 3 images), à partir de l'image de référence |
+| frame-02 | Bras libre à mi-hauteur, plié au coude, paume vers l'avant | Génération dédiée (batch 3 images) |
+| frame-03 | Bras libre levé au maximum au-dessus de la tête | Génération dédiée (batch 3 images) |
+| frame-04 | Bras libre à mi-hauteur (retour) | Réutilisation de frame-02 (même pose, cycle aller-retour) |
+
+Mouvement simple à réussir en un seul lot car aucune alternance gauche/droite requise (une seule main bouge, le bâton reste dans l'autre main sur les 3 images). À privilégier comme modèle pour les prochains mouvements simples.
+
+À ranger dans `/04-mouvements/racine/saluer/frame-01.png` à `frame-04.png`.
+
 ## Personnalité / émotion dominante
 
 - **Traits de personnalité** : protecteur, organisé, sérieux, loyal, a du mal à lâcher le contrôle
