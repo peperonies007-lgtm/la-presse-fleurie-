@@ -39,6 +39,12 @@ PERSONNAGE : Racine, un petit gnome des bois en pâte à modeler (claymation), s
 À ÉVITER : aucun watermark, logo ou icône scintillante/étincelle dans l'image. Aucun dégradé ni vignettage sur le fond (fond uni et plat uniquement). Pas de silhouette élancée ou de proportions d'adulte — corps compact et chibi uniquement. Pas de barbe à spirales décoratives lisses et symétriques — barbe noueuse façon racines uniquement. Pas de texte ni de signature dans l'image. Pas de deuxième personnage dans le cadre.
 ```
 
+## Statut
+
+**Référence validée** (2e génération, après correction de la silhouette, de la texture de barbe et de la position de la feuille — voir bloc À ÉVITER ci-dessus). Cette image sert désormais de base pour toutes les générations futures de Racine (poses, mouvements, plans d'épisode) : la décrire dans les prompts suivants comme une image de référence existante plutôt que de repartir du texte seul, pour maximiser la cohérence.
+
+> Note technique : un badge/icône scintillante apparaît systématiquement en bas à droite des générations Gemini/Nano Banana. Ce n'est pas corrigeable par prompt (probablement un élément d'app, pas un artefact du modèle) — à rogner systématiquement au montage (Phase 5, CapCut) plutôt que de chercher à l'éliminer en amont.
+
 ## Personnalité / émotion dominante
 
 - **Traits de personnalité** : protecteur, organisé, sérieux, loyal, a du mal à lâcher le contrôle

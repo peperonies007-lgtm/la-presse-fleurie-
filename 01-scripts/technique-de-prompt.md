@@ -32,6 +32,10 @@ Le bloc À ÉVITER doit lister les biais connus du modèle à corriger pour ce p
 
 Ne jamais changer de session/conversation en cours de route pour un même personnage. Le modèle garde en mémoire le contexte visuel au sein d'une même conversation, ce qui améliore la cohérence entre générations successives. Une nouvelle conversation = risque de dérive visuelle plus élevé, donc à réserver au démarrage d'un nouveau personnage ou en cas de dérive déjà installée nécessitant un redémarrage propre.
 
+## Limite connue : badge/icône scintillante Gemini
+
+Les générations via Gemini/Nano Banana laissent parfois un petit badge scintillant dans un coin de l'image (constaté systématiquement en bas à droite lors des tests sur Racine). Ce n'est pas un artefact du modèle mais probablement un élément d'app — inutile de l'ajouter au bloc À ÉVITER, il ne disparaît pas par prompt. À rogner systématiquement au montage (Phase 5).
+
 ## Exemple de structure de prompt
 
 ```
