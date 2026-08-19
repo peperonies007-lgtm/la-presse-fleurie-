@@ -28,7 +28,15 @@
 > Bloc réutilisable **tel quel** dans chaque génération impliquant Racine. Ne jamais reformuler, ne jamais paraphraser — copier-coller à l'identique à chaque fois (voir `/01-scripts/technique-de-prompt.md`).
 
 ```
-PERSONNAGE : Racine, un petit gnome des bois en pâte à modeler (claymation), style stop-motion pour enfants. Corps trapu et rond, jambes courtes, posture stable et bien ancrée au sol. Peau du visage et des mains brun clair chaud (ton écorce claire). Barbe brun foncé grisé, tressée en mèches qui évoquent des racines entrelacées. Bonnet conique en écorce brun-rouge, avec une petite feuille d'érable séchée plantée au sommet. Tunique vert mousse ceinturée d'une fine liane brun foncé. Petits yeux noirs et ronds. Tient toujours à la main un petit bâton noueux. Texture pâte à modeler lissée, finition douce et nette, traces d'outils minimales, se détachant clairement du fond. Fond neutre brun terre uni, texture pâte à modeler légère, sans détail, sans ombre portée.
+PERSONNAGE : Racine, un petit gnome des bois en pâte à modeler (claymation), style stop-motion pour enfants. Corps TRÈS trapu et compact, proportions chibi (tête large, torse court et rond, jambes courtes et épaisses), PAS de silhouette élancée ni de proportions d'adulte. Posture stable et bien ancrée au sol. Peau du visage et des mains brun clair chaud (ton écorce claire). Barbe brun foncé grisé, épaisse et noueuse, texturée comme un enchevêtrement de racines noueuses avec des nœuds et renflements irréguliers — PAS une barbe à spirales décoratives lisses et régulières, PAS de bouclettes ornementales symétriques. Bonnet conique en écorce brun-rouge, avec une petite feuille d'érable séchée plantée bien droite tout en haut de la pointe du bonnet (pas sur le côté). Tunique vert mousse ceinturée d'une fine liane brun foncé enroulée deux fois. Petits yeux noirs et ronds. Tient toujours à la main un petit bâton noueux. Texture pâte à modeler lissée, finition douce et nette, traces d'outils minimales, se détachant clairement du fond. Fond neutre brun terre uni, texture pâte à modeler légère, uniforme, sans dégradé ni vignettage, sans détail, sans ombre portée.
+```
+
+### Biais connus à éviter (bloc À ÉVITER pour Racine)
+
+> À reprendre tel quel dans le bloc "À ÉVITER" de chaque prompt de génération impliquant Racine (voir `/01-scripts/technique-de-prompt.md`). Liste mise à jour au fil des essais.
+
+```
+À ÉVITER : aucun watermark, logo ou icône scintillante/étincelle dans l'image. Aucun dégradé ni vignettage sur le fond (fond uni et plat uniquement). Pas de silhouette élancée ou de proportions d'adulte — corps compact et chibi uniquement. Pas de barbe à spirales décoratives lisses et symétriques — barbe noueuse façon racines uniquement. Pas de texte ni de signature dans l'image. Pas de deuxième personnage dans le cadre.
 ```
 
 ## Personnalité / émotion dominante
