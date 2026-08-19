@@ -45,6 +45,19 @@ PERSONNAGE : Racine, un petit gnome des bois en pâte à modeler (claymation), s
 
 > Note technique : un badge/icône scintillante apparaît systématiquement en bas à droite des générations Gemini/Nano Banana. Ce n'est pas corrigeable par prompt (probablement un élément d'app, pas un artefact du modèle) — à rogner systématiquement au montage (Phase 5, CapCut) plutôt que de chercher à l'éliminer en amont.
 
+## Bibliothèque de mouvements
+
+### Marcher (4 frames) — validé
+
+| Frame | Contenu | Origine |
+|---|---|---|
+| frame-01 | Contact A — jambe droite nettement en avant, jambe gauche en arrière, foulée engagée | Génération dédiée, à partir de l'image de référence |
+| frame-02 | Jambe droite levée, genou plié à 90°, pied décollé du sol | Génération dédiée, à partir de l'image de référence |
+| frame-03 | Pose neutre (transition) | Réutilisation de l'image de référence validée (voir astuce de repli dans `/04-mouvements/liste-mouvements-standards.md`) |
+| frame-04 | Jambe gauche levée, genou plié à 90°, pied décollé du sol | Miroir horizontal exact de frame-02 |
+
+À ranger dans `/04-mouvements/racine/marcher/frame-01.png` à `frame-04.png` (rogner le badge scintillant Gemini avant export).
+
 ## Personnalité / émotion dominante
 
 - **Traits de personnalité** : protecteur, organisé, sérieux, loyal, a du mal à lâcher le contrôle
