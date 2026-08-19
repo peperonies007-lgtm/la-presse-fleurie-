@@ -82,3 +82,23 @@ Un nœud dans l'écorce à la base de la Fourche porte un visage à peine esquis
 - **Cohérence des couleurs** : chaque personnage a sa palette propre (définie dans sa fiche individuelle) mais reste dans la gamme de couleurs naturelles/terreuses de la série.
 - **Angle de référence** : sauf indication contraire dans un prompt, les personnages sont générés de face ou 3/4, jamais de profil strict, pour rester reconnaissables des enfants.
 - **Logique de matériaux** : tout élément visible dans un décor ou porté par un personnage doit pouvoir se justifier comme venant de l'arbre (feuille, écorce, sève, mousse, rosée, toile d'araignée) — jamais d'objet moderne ou incohérent avec le microcosme.
+
+## Identité graphique et viralité
+
+Trois principes observés sur les personnages/marques qui percent sur les réseaux (Labubu, Chiikawa) et sur les formats courts en général, à appliquer systématiquement à la conception de la série.
+
+### Le test de la silhouette
+
+Un personnage doit rester identifiable même réduit à la taille d'une vignette, flou, ou en noir et blanc — c'est ce qui permet à un personnage d'être reconnaissable dans n'importe quel contexte (habillé différemment, sous une autre lumière, en objet dérivé). Concrètement : réduire l'image de référence de chaque personnage validé à la taille d'une vignette (quelques centimètres) et vérifier qu'il reste identifiable instantanément. Si non, renforcer le contraste de sa silhouette ou de sa couleur signature avant de valider la fiche définitivement.
+
+### Le hook des 3 premières secondes + la boucle
+
+Sur les formats courts (TikTok, YouTube Shorts, Reels), le premier plan doit être un hook visuel ou une situation curieuse, jamais une mise en place lente — c'est ce qui détermine si le spectateur reste au-delà des premières secondes. Quand c'est possible, penser le dernier plan d'un épisode pour qu'il puisse boucler naturellement vers le premier (ou vers le générique) : les contenus qui bouclent bien génèrent plus de re-visionnages, ce que les algorithmes favorisent.
+
+### L'univers derrière le personnage
+
+Un design mignon ne suffit pas à créer de l'attachement durable — c'est la présence d'un univers/histoire cohérent (déjà développé ci-dessus : l'érable, la logique d'échelle, la carte du village, les saisons) qui transforme un personnage en objet auquel le public s'attache. À exploiter activement dans toute communication autour de la série : ne jamais présenter un personnage seul sans rappeler le monde auquel il appartient.
+
+### Palette signature par personnage
+
+Au-delà de la palette générale terreuse de la série, chaque personnage doit porter au moins une touche de couleur vive et unique qui le rend repérable en un coup d'œil dans un flux (ex : la feuille orange de Racine) — cette couleur signature doit être définie dans la fiche de chaque personnage et ne jamais être réutilisée pour un autre membre de l'équipe.
