@@ -43,6 +43,10 @@ Pour un cycle de mouvement de la bibliothèque (`/04-mouvements`), il est possib
 
 Cette variante accélère la production mais reste plus fragile que la génération frame par frame : vérifier après coup que chaque image respecte bien sa pose individuelle et que le personnage n'a pas dérivé d'une frame à l'autre. En cas de dérive, repasser en génération séparée frame par frame.
 
+## Astuce : miroir horizontal par image de référence
+
+Le modèle a du mal à alterner correctement une jambe/un bras gauche-droite sur une consigne purement textuelle (biais constaté sur le cycle de marche de Racine : la même jambe se relève à chaque fois malgré des consignes explicites répétées). Solution plus fiable : fournir en référence l'image déjà générée de la pose (ex : jambe droite levée) et demander explicitement son **miroir horizontal exact** plutôt qu'une nouvelle interprétation textuelle de la pose inverse. Le modèle inverse alors toute l'image de façon cohérente (jambe, bras, accessoires asymétriques compris), ce qui garantit une géométrie correcte. Accepter que les accessoires asymétriques (ex : main tenant un bâton) changent de côté dans ce cas, sauf si la fiche personnage fige explicitement une main précise.
+
 ## Limite connue : badge/icône scintillante Gemini
 
 Les générations via Gemini/Nano Banana laissent parfois un petit badge scintillant dans un coin de l'image (constaté systématiquement en bas à droite lors des tests sur Racine). Ce n'est pas un artefact du modèle mais probablement un élément d'app — inutile de l'ajouter au bloc À ÉVITER, il ne disparaît pas par prompt. À rogner systématiquement au montage (Phase 5).
