@@ -15,8 +15,8 @@ Personnage utilisé : `Boule`, voir `/99-tests-process/personnage-test/fiche-per
 | Frame | Angle visé | Ancrée sur | Résultat | Dérive observée | Tentatives nécessaires |
 |---|---|---|---|---|---|
 | 1 | 0° (face) | prompt de base | Réussi du 1er coup — style croquis N&B bien respecté (traits esquissés, hachurage, imperfections) | Aucune | 1 |
-| 2 | ~15° | frame 1 | Échec x2 — image quasi identique à la frame 1, aucune rotation visible appliquée malgré la consigne | Sur-ancrage total sur la référence : le modèle ignore un changement jugé "trop subtil" (15°) plutôt que de dériver visuellement | 2 (en cours, consigne à renforcer) |
-| 3 | ~30° | frame 2 | En attente | | |
+| 2 | ~15° puis reformulé "position 9h" | frame 1 | Échec x2 avec angle en degrés, réussi à la 3e tentative avec repère d'horloge ("9 heures") — décalage net et clairement visible | Aucune une fois la bonne formulation trouvée | 3 |
+| 3 | ~30° / "position 8h" | frame 2 | En attente | | |
 | 4 | ~45° | frame 3 | En attente | | |
 | 5 | ~60° | frame 4 | En attente | | |
 
