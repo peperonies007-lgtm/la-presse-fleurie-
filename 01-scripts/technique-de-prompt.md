@@ -32,6 +32,14 @@ Le bloc À ÉVITER doit lister les biais connus du modèle à corriger pour ce p
 
 Ne jamais changer de session/conversation en cours de route pour un même personnage. Le modèle garde en mémoire le contexte visuel au sein d'une même conversation, ce qui améliore la cohérence entre générations successives. Une nouvelle conversation = risque de dérive visuelle plus élevé, donc à réserver au démarrage d'un nouveau personnage ou en cas de dérive déjà installée nécessitant un redémarrage propre.
 
+## Chaînage ancré + repère visuel concret (validé sur test dédié)
+
+Pour une séquence dense (plus de 4-5 frames sur un même mouvement), deux techniques combinées donnent un taux de réussite nettement meilleur que la description de pose classique (validé sur `/99-tests-process/personnage-test/test-chainage-regarder-autour/journal-test-process.md`, 100 % de réussite du premier coup une fois la méthode correcte trouvée) :
+
+1. **Chaînage ancré** : chaque nouvelle frame est générée en joignant la frame précédente (pas l'image de référence de base), avec une consigne de changement minimal et unique. Un petit delta est plus facile à respecter pour le modèle qu'une pose entièrement redécrite.
+2. **Repère visuel concret plutôt qu'un angle abstrait** : une consigne du type "tourne de 15°" échoue souvent — le modèle juge le changement trop subtil et reproduit l'image de référence à l'identique. Utiliser un repère concret et comparable (ex : "position 9 heures d'une horloge") fonctionne nettement mieux et doit être la formulation par défaut pour toute consigne de rotation/déplacement progressif.
+3. Toujours préciser explicitement "génère une image visiblement DIFFÉRENTE de la référence, ne la reproduis pas à l'identique" — ce rappel réduit le risque de sur-ancrage.
+
 ## Variante : génération groupée d'un cycle de mouvement
 
 Pour un cycle de mouvement de la bibliothèque (`/04-mouvements`), il est possible de demander à Gemini de générer en une seule requête toutes les frames clés d'un même mouvement (ex : les 4 frames d'un cycle de marche), plutôt que d'envoyer un prompt par frame. Ça reste conforme à la règle "une seule pose par image" tant que le prompt :
