@@ -40,6 +40,16 @@ Pour une séquence dense (plus de 4-5 frames sur un même mouvement), deux techn
 2. **Repère visuel concret plutôt qu'un angle abstrait** : une consigne du type "tourne de 15°" échoue souvent — le modèle juge le changement trop subtil et reproduit l'image de référence à l'identique. Utiliser un repère concret et comparable (ex : "position 9 heures d'une horloge") fonctionne nettement mieux et doit être la formulation par défaut pour toute consigne de rotation/déplacement progressif.
 3. Toujours préciser explicitement "génère une image visiblement DIFFÉRENTE de la référence, ne la reproduis pas à l'identique" — ce rappel réduit le risque de sur-ancrage.
 
+## Vérification systématique entre chaque paire de frames
+
+Analyser un mouvement, c'est analyser rigoureusement chaque paire de frames consécutives (A → B) — il n'y a pas d'étape séparée "analyser le mouvement global" en plus de ça. À chaque nouvelle frame générée, vérifier avant de continuer la chaîne :
+
+1. **Tout ce qui doit rester identique reste identique** : silhouette, couleurs, accessoires, échelle, cadrage, fond. Toute dérive en dehors du changement demandé est un échec, même si elle semble mineure.
+2. **Le changement demandé est bien présent, et dans le bon sens.** Ni identique à la frame précédente (sur-ancrage), ni inversé, ni disproportionné.
+3. **L'amplitude du changement est cohérente avec le delta de la paire précédente.** Une frame peut être individuellement parfaite tout en cassant le rythme de la séquence si son delta par rapport à la précédente est plus grand ou plus petit que les deltas précédents — c'est le point le plus facile à manquer en ne jugeant chaque image qu'isolément, et celui qui produit un mouvement saccadé à l'assemblage même quand chaque frame "a l'air bien" prise seule.
+
+Si un de ces trois points échoue sur une paire, corriger et regénérer cette frame avant de continuer la chaîne — ne jamais continuer sur une frame défaillante en espérant que ça se rattrape plus loin.
+
 ## Variante : génération groupée d'un cycle de mouvement
 
 Pour un cycle de mouvement de la bibliothèque (`/04-mouvements`), il est possible de demander à Gemini de générer en une seule requête toutes les frames clés d'un même mouvement (ex : les 4 frames d'un cycle de marche), plutôt que d'envoyer un prompt par frame. Ça reste conforme à la règle "une seule pose par image" tant que le prompt :
