@@ -14,11 +14,15 @@ Personnage utilisé : `Boule`, voir `/99-tests-process/personnage-test/fiche-per
 
 | Frame | Angle visé | Ancrée sur | Résultat | Dérive observée | Tentatives nécessaires |
 |---|---|---|---|---|---|
-| 1 | 0° (face) | prompt de base | À générer | | |
-| 2 | ~15° | frame 1 | À tester | | |
-| 3 | ~30° | frame 2 | À tester | | |
-| 4 | ~45° | frame 3 | À tester | | |
-| 5 | ~60° | frame 4 | À tester | | |
+| 1 | 0° (face) | prompt de base | Réussi du 1er coup — style croquis N&B bien respecté (traits esquissés, hachurage, imperfections) | Aucune | 1 |
+| 2 | ~15° | frame 1 | Échec x2 — image quasi identique à la frame 1, aucune rotation visible appliquée malgré la consigne | Sur-ancrage total sur la référence : le modèle ignore un changement jugé "trop subtil" (15°) plutôt que de dériver visuellement | 2 (en cours, consigne à renforcer) |
+| 3 | ~30° | frame 2 | En attente | | |
+| 4 | ~45° | frame 3 | En attente | | |
+| 5 | ~60° | frame 4 | En attente | | |
+
+### Enseignement en cours
+
+Contrairement à la marche (où le risque était la dérive incontrôlée), ici le risque inverse apparaît : le modèle reproduit l'image de référence presque à l'identique et n'applique pas un changement jugé trop faible. Piste de correction : formuler le changement de façon plus insistante et avec un repère visuel plus net (ex. comparer explicitement à un cadran horaire ou une fraction du cercle) plutôt qu'un simple angle en degrés.
 
 ## Conclusion du test
 
