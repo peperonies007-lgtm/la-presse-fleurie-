@@ -1,6 +1,6 @@
-# Workflow de production — série animée stop-motion IA
+# Workflow de production — série animée 2D IA
 
-Résumé du workflow complet de production, en 8 phases. Méthode : génération d'images fixes cohérentes via IA (Nano Banana / Gemini), assemblées en stop-motion réel (6-8 images/seconde, cuts secs, pas d'interpolation IA par défaut).
+Résumé du workflow complet de production, en 8 phases. Méthode : génération d'images fixes cohérentes via IA (Nano Banana / Gemini), assemblées en animation 2D "sur les deux" (12 dessins uniques par seconde, chaque image tenue 2 images à l'écran, pas d'interpolation IA par défaut).
 
 ## Structure du projet
 
@@ -11,7 +11,7 @@ Résumé du workflow complet de production, en 8 phases. Méthode : génération
 /03-decors            Décors réutilisables
 /04-mouvements        Bibliothèque de cycles de mouvement réutilisables par personnage
 /05-generations        Images générées, classées par épisode/plan/frame
-/06-assemblages        Séquences stop-motion montées, par plan
+/06-assemblages        Séquences animées montées, par plan
 /07-son               Musique, voix, bruitages
 /08-episodes-finaux    Montages finaux exportés
 ```
@@ -48,9 +48,9 @@ Génération des poses/expressions non couvertes par la bibliothèque de mouveme
 - **Temps estimé** : variable selon le nombre de plans "NOUVEAU" identifiés dans le découpage
 - **Fichier de sortie attendu** : images dans `/05-generations/episode-XX/plan-XX/`
 
-### Phase 5 — Assemblage stop-motion plan par plan
-Montage de chaque plan en stop-motion réel : 6-8 images par seconde, cuts secs, pas d'interpolation IA par défaut.
-- **Outils recommandés** : CapCut (gratuit) ou une app stop-motion dédiée (ex : Stop Motion Studio)
+### Phase 5 — Assemblage 2D plan par plan
+Montage de chaque plan en animation 2D : 12 images par seconde ("sur les deux"), pas d'interpolation IA par défaut.
+- **Outils recommandés** : CapCut (gratuit)
 - **Temps estimé** : 20 à 40 minutes par plan
 - **Fichier de sortie attendu** : séquences vidéo dans `/06-assemblages/episode-XX/plan-XX.mp4`
 

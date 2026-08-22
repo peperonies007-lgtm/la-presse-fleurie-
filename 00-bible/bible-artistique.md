@@ -8,7 +8,7 @@ Un petit village vit caché dans les branches d'un vieil érable du Japon en bon
 
 La série se raconte entièrement sans dialogue parlé — uniquement par le langage corporel, les expressions, les onomatopées et les bruitages. C'est un choix stratégique autant qu'artistique (validé par des références comme *Larva*, diffusée dans plus de 180 pays sans une seule ligne de dialogue) :
 - **Portée internationale** : une série sans dialogue n'a besoin d'aucun doublage/sous-titrage pour être comprise partout — le geste et l'expression sont un langage universel.
-- **Économie de production** : pas de synchronisation labiale à animer frame par frame, ce qui est particulièrement coûteux en génération IA + stop-motion.
+- **Économie de production** : pas de synchronisation labiale à animer frame par frame, ce qui est particulièrement coûteux en génération IA + animation 2D.
 - **Conséquences pour l'écriture et le design** :
   - Chaque épisode doit se comprendre uniquement par l'image et le son (voir `/07-son/technique-son-et-rythme.md`) — jamais par une réplique.
   - Les personnages communiquent par gestes, regards, expressions exagérées et sons non-verbaux (grognements, exclamations, onomatopées).

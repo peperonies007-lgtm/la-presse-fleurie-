@@ -52,7 +52,7 @@ Si un de ces trois points échoue sur une paire, corriger et regénérer cette f
 
 ## Variante : génération groupée d'un cycle de mouvement
 
-Pour un cycle de mouvement de la bibliothèque (`/04-mouvements`), il est possible de demander à Gemini de générer en une seule requête toutes les frames clés d'un même mouvement (ex : les 4 frames d'un cycle de marche), plutôt que d'envoyer un prompt par frame. Ça reste conforme à la règle "une seule pose par image" tant que le prompt :
+Pour un cycle de mouvement de la bibliothèque (`/04-mouvements`), il est possible de demander à Gemini de générer en une seule requête toutes les frames clés d'un même mouvement (ex : les 8 frames d'un cycle de marche en 2D "sur les deux"), plutôt que d'envoyer un prompt par frame. Ça reste conforme à la règle "une seule pose par image" tant que le prompt :
 
 - répète le bloc PERSONNAGE une seule fois en tête de prompt (toujours mot pour mot, jamais reformulé)
 - décrit ensuite chaque frame séparément, numérotée (Image 1, Image 2...), avec sa propre consigne de pose
