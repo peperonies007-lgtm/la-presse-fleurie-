@@ -46,3 +46,22 @@ PERSONNAGE : Zoum, une mouche stylisée pour série d'animation 2D destinée aux
 | Panique | Yeux écarquillés, antenne cassée tremblante, mains sur les joues |
 
 À ranger dans `/10-zoum-et-radar/02-references/zoum/` (référence de base + planche d'expressions, rogner le badge scintillant avant export).
+
+## Bibliothèque de mouvements
+
+### S'élancer vers l'avant (8 frames) — validé, premier test complet en 2D
+
+| Frame | Contenu | Méthode |
+|---|---|---|
+| frame-01 | Pose neutre (référence) | Réutilisation de la référence validée |
+| frame-02 | Anticipation légère — corps tassé, poings serrés | Génération en lot de 3, sélectionnée |
+| frame-03 | Anticipation maximale — ressort comprimé | Génération en lot de 3 ("Anticipation C"), sélectionnée |
+| frame-04 | Départ du bond — une jambe pousse encore au sol | Génération en lot de 3, sélectionnée |
+| frame-05 | Mi-élan — corps étiré, jambes décollées | Génération en lot de 3, sélectionnée |
+| frame-06 | Élan avancé — bras tendu, jambes traînant derrière | Génération en lot de 3, sélectionnée |
+| frame-07 | Presque extension max | Génération en lot de 3, sélectionnée |
+| frame-08 | Extension complète (limite naturelle de la silhouette potelée) | Génération en lot de 3, sélectionnée |
+
+**Enseignement clé de ce test** : un biais anatomique récurrent (paire de bras supplémentaire) a résisté à des corrections de prompt répétées en génération isolée, mais a disparu dès la génération en lot de 3 variantes avec sélection — cette méthode est désormais la stratégie de repli par défaut (voir `/01-scripts/technique-de-prompt.md`).
+
+À ranger dans `/10-zoum-et-radar/04-mouvements/zoum/s-elancer/frame-01.png` à `frame-08.png`.
