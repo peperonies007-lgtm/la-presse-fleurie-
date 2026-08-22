@@ -14,15 +14,16 @@
   - Petite tache ronde façon éclaboussure de sauce sur le dessus du thorax, toujours au même endroit
   - Ailes légèrement irrégulières, un bord plus effiloché que l'autre
   - Grands yeux ronds très expressifs avec petits sourcils épais esquissés
+  - **Exactement 2 bras et 2 jambes, jamais plus** (stylisation chibi, pas d'anatomie réaliste d'insecte à 6 pattes) — biais constaté du modèle à surveiller : tendance à dessiner une paire de bras supplémentaire
 - **Matière** : croquis crayonné noir et blanc (voir `/10-zoum-et-radar/00-bible/bible-artistique.md`)
 - **Échelle relative** : 100 % — référence du duo
 
 ## Prompt de base PERSONNAGE
 
 ```
-PERSONNAGE : Zoum, une mouche stylisée pour série d'animation 2D destinée aux enfants, dessinée dans un style croquis crayonné noir et blanc, façon test d'animation traditionnelle (pencil test) : traits de crayon esquissés à la main, légèrement imparfaits et vivants, pas de couleur, uniquement des nuances de gris et de noir, ombrage léger au trait ou au hachurage simple, fond blanc uni sans détail. Corps rond et potelé, joues gonflées en permanence (comme si elle avait toujours la bouche pleine — détail fixe, jamais dégonflées). Une antenne bien droite, l'autre cassée/pliée à mi-hauteur (détail distinctif fixe). Petite tache ronde façon éclaboussure de sauce sur le dessus du thorax, toujours au même endroit. Ailes légèrement irrégulières, un bord plus effiloché que l'autre. Grands yeux ronds très expressifs avec de petits sourcils épais esquissés au-dessus. Pattes fines, silhouette globale asymétrique et un peu bancale plutôt que parfaitement ronde.
+PERSONNAGE : Zoum, une mouche stylisée pour série d'animation 2D destinée aux enfants, dessinée dans un style croquis crayonné noir et blanc, façon test d'animation traditionnelle (pencil test) : traits de crayon esquissés à la main, légèrement imparfaits et vivants, pas de couleur, uniquement des nuances de gris et de noir, ombrage léger au trait ou au hachurage simple, fond blanc uni sans détail. Corps rond et potelé, joues gonflées en permanence (comme si elle avait toujours la bouche pleine — détail fixe, jamais dégonflées). Une antenne bien droite, l'autre cassée/pliée à mi-hauteur (détail distinctif fixe). Petite tache ronde façon éclaboussure de sauce sur le dessus du thorax, toujours au même endroit. Ailes légèrement irrégulières, un bord plus effiloché que l'autre. Grands yeux ronds très expressifs avec de petits sourcils épais esquissés au-dessus. Pattes fines, silhouette globale asymétrique et un peu bancale plutôt que parfaitement ronde. Exactement 2 bras et 2 jambes au total (stylisation chibi simple, jamais d'anatomie réaliste d'insecte à 6 pattes, jamais de paire de bras supplémentaire).
 
-À ÉVITER : aucune couleur. Aucun rendu numérique lisse ou vectoriel — le trait doit rester esquissé et légèrement irrégulier. Aucun réalisme d'insecte (pas de poils, pas d'yeux facettés réalistes). Pas de silhouette parfaitement symétrique/ronde — les asymétries (antenne, aile, joues) doivent rester visibles. Aucun watermark, logo ou icône scintillante. Pas de texte dans l'image. Pas de deuxième personnage.
+À ÉVITER : aucune couleur. Aucun rendu numérique lisse ou vectoriel — le trait doit rester esquissé et légèrement irrégulier. Aucun réalisme d'insecte (pas de poils, pas d'yeux facettés réalistes). Pas de silhouette parfaitement symétrique/ronde — les asymétries (antenne, aile, joues) doivent rester visibles. AUCUNE PAIRE DE BRAS SUPPLÉMENTAIRE — exactement 2 bras et 2 jambes, jamais 4 bras, jamais 6 membres. Aucun watermark, logo ou icône scintillante. Pas de texte dans l'image. Pas de deuxième personnage.
 ```
 
 ## Statut
