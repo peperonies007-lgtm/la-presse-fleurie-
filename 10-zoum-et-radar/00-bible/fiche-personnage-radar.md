@@ -45,6 +45,21 @@ PERSONNAGE : Radar, une mouche stylisée pour série d'animation 2D destinée au
 
 À ranger dans `/10-zoum-et-radar/02-references/radar/` (référence de base + planche d'expressions, rogner le badge scintillant avant export).
 
+## Séquence de réaction — validée (test qualité manuel)
+
+Petite séquence de 4 frames (réaction de surprise/alerte), produite en visant la perfection frame par frame plutôt que le volume — chaque frame vérifiée rigoureusement (silhouette, détails distinctifs, amplitude) avant de continuer la chaîne.
+
+| Frame | Contenu |
+|---|---|
+| frame-01 | Neutre (référence de base) |
+| frame-02 | Elle remarque quelque chose — les deux yeux s'écarquillent légèrement |
+| frame-03 | Choc maximal — yeux au maximum, antennes dressées et raides, recul du corps |
+| frame-04 | Elle se reprend — retour au regard asymétrique caractéristique, posture stable, antennes encore un peu relevées |
+
+Une erreur de référence croisée (image de Zoum utilisée par erreur) a été détectée et corrigée dès la vérification de la frame 2 — bon test de la rigueur de vérification par paire.
+
+À ranger dans `/10-zoum-et-radar/04-mouvements/radar/reaction-alerte/frame-01.png` à `frame-04.png` (recadrage automatique via `/99-tests-process/scripts/auto-crop-normalize.py`).
+
 ## Scène duo — validée
 
 Une première scène avec Zoum a été générée avec succès (Zoum penchée avidement vers hors-champ, Radar immobile à côté, bras croisés, regard sceptique) — confirme l'échelle relative et la lisibilité du duo ensemble. À ranger dans `/10-zoum-et-radar/02-references/duo/`.
