@@ -40,6 +40,10 @@ Pour une séquence dense (plus de 4-5 frames sur un même mouvement), deux techn
 2. **Repère visuel concret plutôt qu'un angle abstrait** : une consigne du type "tourne de 15°" échoue souvent — le modèle juge le changement trop subtil et reproduit l'image de référence à l'identique. Utiliser un repère concret et comparable (ex : "position 9 heures d'une horloge") fonctionne nettement mieux et doit être la formulation par défaut pour toute consigne de rotation/déplacement progressif.
 3. Toujours préciser explicitement "génère une image visiblement DIFFÉRENTE de la référence, ne la reproduis pas à l'identique" — ce rappel réduit le risque de sur-ancrage.
 
+## Convention de nommage des fichiers
+
+Pour ne pas se perdre entre les variantes d'un même lot, nommer chaque image dès son téléchargement : `[personnage]-[mouvement]-f[numéro].png` (ex : `zoum-selancer-f05.png`). Si plusieurs variantes d'un lot sont gardées temporairement avant sélection, suffixer `-optionA`/`-optionB`/`-optionC`, puis supprimer les rejets une fois le choix fait pour ne garder que le nom final propre. Dès qu'une frame est validée, l'assistant doit indiquer explicitement le nom de fichier à utiliser plutôt que de laisser deviner.
+
 ## Stratégie de repli : génération en lot + sélection
 
 Quand un biais résiste à la correction en une seule tentative (ex : le modèle ajoute une paire de membres en trop malgré une consigne explicite répétée), ne pas s'acharner sur des régénérations isolées. Demander 2-3 variantes en une seule requête (nommées/étiquetées), puis choisir celle qui est correcte parmi le lot plutôt que d'essayer de forcer une seule génération à être parfaite. Validé sur le test d'anticipation de Zoum : le biais des bras en double a disparu sur les 3 variantes d'un même lot, alors qu'il persistait sur des tentatives isolées répétées.
