@@ -40,9 +40,17 @@ Pour une séquence dense (plus de 4-5 frames sur un même mouvement), deux techn
 2. **Repère visuel concret plutôt qu'un angle abstrait** : une consigne du type "tourne de 15°" échoue souvent — le modèle juge le changement trop subtil et reproduit l'image de référence à l'identique. Utiliser un repère concret et comparable (ex : "position 9 heures d'une horloge") fonctionne nettement mieux et doit être la formulation par défaut pour toute consigne de rotation/déplacement progressif.
 3. Toujours préciser explicitement "génère une image visiblement DIFFÉRENTE de la référence, ne la reproduis pas à l'identique" — ce rappel réduit le risque de sur-ancrage.
 
-## Convention de nommage des fichiers
+## Convention de nommage des fichiers (pour les frames validées et rangées dans le projet)
 
-Pour ne pas se perdre entre les variantes d'un même lot, nommer chaque image dès son téléchargement : `[personnage]-[mouvement]-f[numéro].png` (ex : `zoum-selancer-f05.png`). Si plusieurs variantes d'un lot sont gardées temporairement avant sélection, suffixer `-optionA`/`-optionB`/`-optionC`, puis supprimer les rejets une fois le choix fait pour ne garder que le nom final propre. Dès qu'une frame est validée, l'assistant doit indiquer explicitement le nom de fichier à utiliser plutôt que de laisser deviner.
+Pour ne pas se perdre entre les variantes d'un même lot, nommer chaque image dès son téléchargement : `[personnage]-[mouvement]-f[numéro].png` (ex : `zoum-selancer-f05.png`). Si plusieurs variantes d'un lot sont gardées temporairement avant sélection, suffixer `-optionA`/`-optionB`/`-optionC`, puis supprimer les rejets une fois le choix fait pour ne garder que le nom final propre.
+
+## Repère pendant la production (avant sauvegarde) : compteur de frame, pas de nom de fichier
+
+En cours de chaînage, sur mobile en particulier, un nom de fichier ou une description visuelle ne suffit pas à retrouver l'image à réutiliser dès qu'il y a plusieurs frames qui se ressemblent (ex : séquence avec easing). Utiliser à la place un **numéro de frame séquentiel**, partagé dans la conversation :
+- Chaque frame validée est annoncée explicitement par son numéro ("Frame 5 validée").
+- Pour l'étape suivante, la consigne cite ce numéro ("attache la Frame 5") plutôt qu'un nom de fichier ou une description.
+- Le numéro correspond à l'ordre de génération dans la conversation IA (Frame 1 = référence de base), donc identifiable en comptant les images générées, sans renommage ni gestion de fichiers nécessaire côté utilisateur pendant la production.
+- Le nom de fichier (`[personnage]-[mouvement]-f[numéro].png`) n'intervient qu'au moment de sauvegarder définitivement la frame validée dans le projet — jamais comme repère de travail en cours de chaînage.
 
 ## Stratégie de repli : génération en lot + sélection
 
