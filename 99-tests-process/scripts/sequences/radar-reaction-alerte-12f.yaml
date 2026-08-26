@@ -1,0 +1,137 @@
+# Reconstruction de la séquence "réaction/alerte" de Radar en 12 frames,
+# telle que validée manuellement (voir fiche-personnage-radar.md).
+# Sert de template : les frames 1, 8 et 9 illustrent les 3 types de repère
+# qui ont fonctionné (identique à la référence, repère concret de recul,
+# hold quasi identique).
+
+personnage_id: radar
+mouvement_id: reaction-alerte-12f
+out_dir: 10-zoum-et-radar/04-mouvements/radar
+
+personnage: |
+  Radar, une mouche stylisée pour série d'animation 2D destinée aux enfants, dessinée dans un style croquis crayonné noir et blanc, façon test d'animation traditionnelle (pencil test) : traits de crayon esquissés à la main, légèrement imparfaits et vivants, pas de couleur, ombrage léger au trait ou au hachurage simple, fond blanc uni. Corps fin et élancé, nettement plus petite et plus mince que Zoum (silhouette opposée : Zoum est ronde et potelée, Radar est fine et compacte). Un œil légèrement plus plissé que l'autre en permanence (regard analytique fixe). Antennes longues, fines, parfaitement droites et rigides, bien plus longues que la tête. Petite marque triangulaire nette sur le dessus de la tête, toujours au même endroit. Ailes fines, nettes, symétriques, repliées avec précision contre le corps. Pattes fines et légèrement pliées, posture bien droite et immobile plutôt qu'agitée. Petits sourcils fins esquissés au-dessus des yeux.
+
+a_eviter_base: |
+  aucune couleur. Aucun rendu numérique lisse ou vectoriel. Aucun réalisme d'insecte. Pas de silhouette ronde/potelée. Aucune tache sur le corps (ça, c'est un détail de Zoum, pas de Radar). Aucun watermark, logo ou icône scintillante. Pas de texte dans l'image. Pas de deuxième personnage.
+
+frames:
+  - reference: base
+    pose: >
+      Reprends exactement la pose de l'image jointe (référence de base), avec un seul
+      changement minimal : le regard commence tout juste à se fixer sur quelque chose
+      hors champ, une légère tension apparaît dans les épaules, les antennes frémissent
+      à peine (à peine perceptible — ne pas les redresser encore). Tout le reste de la
+      posture, l'angle et l'échelle restent identiques à la référence.
+    expression: "Tout début de prise de conscience, très subtil — pas encore de surprise visible."
+    cadrage: "Identique à la référence jointe — même plan, même angle, même échelle."
+    a_eviter_extra: >
+      Ne pas encore écarquiller les yeux ni redresser les antennes à ce stade — le
+      changement doit rester subtil, mais visible (ne pas reproduire la référence à l'identique).
+
+  - reference: previous
+    pose: >
+      Les yeux commencent tout juste à s'agrandir (à peine plus grands que la frame
+      précédente). Les sourcils restent sensiblement identiques — ne pas les froncer
+      davantage. Les antennes restent quasi identiques — ne pas les redresser encore.
+    expression: "La surprise commence tout juste à poindre dans le regard uniquement."
+    cadrage: "Identique à la référence jointe."
+    a_eviter_extra: "Ne pas froncer les sourcils davantage. Ne pas encore redresser les antennes."
+
+  - reference: previous
+    pose: >
+      La base des antennes commence tout juste à se tendre/redresser (à peine perceptible).
+      Les yeux et les sourcils restent identiques à la frame précédente.
+    expression: "Identique à la frame précédente au niveau du visage — le changement se joue dans les antennes."
+    cadrage: "Identique à la référence jointe."
+    a_eviter_extra: "Ne pas modifier les yeux ni les sourcils."
+
+  - reference: previous
+    pose: >
+      Les antennes se redressent un peu plus, environ à mi-chemin vers une position bien
+      droite. Un tout léger recul du buste commence à apparaître (épaules qui se rétractent
+      à peine vers l'arrière). Yeux et sourcils identiques à la frame précédente.
+    expression: "Identique niveau visage — changement dans les antennes et un tout début de recul corporel."
+    cadrage: "Identique à la référence jointe."
+    a_eviter_extra: "Le recul du buste doit rester très léger, pas encore un mouvement complet."
+
+  - reference: previous
+    pose: >
+      REPÈRE CONCRET (ne pas utiliser de consigne abstraite type "recule un peu") : le
+      sommet de la tête et les antennes se décalent visiblement vers l'arrière, d'environ
+      une largeur de tête du personnage, par rapport à leur position verticale actuelle
+      au-dessus des pieds — tout le haut du corps bascule en arrière sur un axe au niveau
+      des hanches, les pieds restant plantés au même endroit. Les antennes restent aussi
+      droites que sur l'image jointe, ne pas les recourber.
+    expression: "Identique niveau visage."
+    cadrage: "Identique à la référence jointe."
+    a_eviter_extra: >
+      Ne pas recourber les antennes. Le décalage arrière de la tête doit être clairement
+      mesurable par rapport à l'aplomb des pieds, pas juste suggéré.
+
+  - reference: previous
+    pose: >
+      L'image jointe montre déjà la tête/antennes inclinées vers l'arrière — NE PAS revenir
+      à une posture plus droite/centrée. Accentue cette inclinaison d'encore une demi-largeur
+      de tête vers l'arrière, pieds toujours plantés au même endroit. Antennes presque
+      totalement rigides, sans se recourber. Yeux qui s'agrandissent une toute dernière fois,
+      très légèrement.
+    expression: "Choc en approche, juste avant le pic maximal."
+    cadrage: "Identique à la référence jointe."
+    a_eviter_extra: >
+      Ne pas redresser la tête vers une position plus centrée/droite que la frame précédente
+      — l'inclinaison doit augmenter, jamais diminuer. Garder une petite marge pour le pic.
+
+  - reference: previous
+    pose: >
+      C'est le pic du choc. Pousse chaque élément à son maximum absolu : corps incliné vers
+      l'arrière au maximum plausible sans perdre l'équilibre (encore un peu plus que la frame
+      précédente), pieds toujours plantés au même endroit. Antennes totalement rigides, dans
+      le prolongement direct de l'inclinaison du corps. Yeux à leur taille maximale absolue.
+    expression: "Choc maximal — l'instant le plus intense de toute la séquence."
+    cadrage: "Identique à la référence jointe."
+    a_eviter_extra: >
+      Ne pas revenir à une posture plus droite/centrée que la frame précédente — c'est ici
+      le maximum de toute la séquence, ne pas retenir l'intensité.
+
+  - reference: previous
+    pose: >
+      C'est une frame de tenue (hold) — la pose doit rester QUASI IDENTIQUE à l'image jointe,
+      aucun changement de pose, d'angle ou d'expression. Seule différence acceptable : la
+      variation naturelle du trait crayonné à la main (léger tremblé de ligne, pencil test).
+    expression: "Identique à la frame précédente — choc maximal, tenu."
+    cadrage: "Identique à la référence jointe."
+    a_eviter_extra: "Ne pas changer la pose, l'inclinaison ou la taille des yeux — c'est une tenue, pas une nouvelle étape."
+
+  - reference: previous
+    pose: >
+      Tout début de la reprise. Le corps/tête/antennes reviennent vers l'avant d'environ la
+      moitié du décalage arrière total accumulé depuis le pic (donc encore clairement penché
+      en arrière, mais nettement moins qu'à la frame précédente). Antennes qui perdent un peu
+      de leur rigidité maximale, sans se recourber. Yeux qui rapetissent légèrement.
+    expression: "Le choc commence tout juste à retomber — encore très marqué, mais plus au maximum."
+    cadrage: "Identique à la référence jointe."
+    a_eviter_extra: "Ne pas revenir complètement à une posture droite/neutre — ce n'est qu'un début de reprise."
+
+  - reference: previous
+    pose: >
+      Presque revenue à la posture neutre. Corps/tête/antennes reviennent à environ deux tiers
+      du chemin vers la posture bien droite d'origine. Le regard redevient asymétrique — un œil
+      qui reprend son plissement caractéristique. Antennes qui perdent encore de leur rigidité,
+      sans se recourber vers l'extérieur.
+    expression: "Elle commence à retrouver son scepticisme habituel, encore un peu secouée."
+    cadrage: "Identique à la référence jointe."
+    a_eviter_extra: >
+      Ne pas recourber les antennes vers l'extérieur. Le retour vers la posture droite doit
+      être clairement visible par rapport à la frame précédente.
+
+  - reference: previous
+    pose: >
+      Reprise complète. Le corps revient à une posture bien droite, quasiment identique à la
+      référence de base — plus d'inclinaison vers l'arrière. Seule trace résiduelle du choc :
+      les antennes restent très légèrement plus hautes/tendues que dans la référence de base.
+      Le regard reprend son asymétrie caractéristique habituelle.
+    expression: "Son scepticisme habituel est de retour, avec juste une toute petite trace de tension dans les antennes."
+    cadrage: "Identique à la référence jointe."
+    a_eviter_extra: >
+      Ne pas garder d'inclinaison arrière visible — le corps doit être droit comme la référence
+      de base, seules les antennes gardent une toute petite trace de tension.
