@@ -10,9 +10,11 @@ visible, retour à une pose neutre non désiré). Voir la section "Critère de
 choix : planche complète vs chaînage frame par frame" dans
 `/01-scripts/technique-de-prompt.md` pour la raison de ce choix.
 
-**Non testé en conditions réelles dans cette session** (pas de clé API ni
-d'accès réseau Gemini disponibles ici) — à valider une première fois sur PC
-avant de s'en servir en production.
+**Testé en conditions réelles** : authentification et nom de modèle
+confirmés fonctionnels (`gemini-2.5-flash-image`), mais le premier essai a
+buté sur une erreur 429 (quota dépassé) — vérifie ton usage/quota sur
+https://ai.dev/rate-limit et que la facturation est activée sur le projet
+Google Cloud associé à ta clé avant de lancer une vraie séquence.
 
 ### Installation
 

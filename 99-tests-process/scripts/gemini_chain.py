@@ -56,7 +56,7 @@ except ImportError:
     genai = None
     types = None
 
-DEFAULT_MODEL = "gemini-2.5-flash-image-preview"
+DEFAULT_MODEL = "gemini-2.5-flash-image"
 
 
 def build_prompt(personnage, pose, expression, cadrage, a_eviter_base, a_eviter_extra):
