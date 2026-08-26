@@ -77,6 +77,20 @@ Pour un cycle de mouvement de la bibliothèque (`/04-mouvements`), il est possib
 
 Cette variante accélère la production mais reste plus fragile que la génération frame par frame : vérifier après coup que chaque image respecte bien sa pose individuelle et que le personnage n'a pas dérivé d'une frame à l'autre. En cas de dérive, repasser en génération séparée frame par frame.
 
+### Critère de choix : planche complète vs chaînage frame par frame
+
+Le choix entre les deux méthodes dépend de l'usage prévu de la séquence, pas d'une préférence générale pour la vitesse :
+
+- **Planche complète en un seul prompt** → réservée à la prévisualisation rapide, aux mouvements secondaires/personnages de fond, ou à un premier brouillon pour choisir une direction avant de valider.
+- **Chaînage frame par frame** → réservé aux mouvements "hero" qui vont réellement dans la bibliothèque finale (`/04-mouvements`), là où la précision compte.
+
+Raison, constatée sur deux tests concrets :
+
+1. **Cycle de marche de Racine** (génération en un seul prompt, 4 frames) : le lot a produit un mirroring incorrect (frame 1 ≈ frame 3, frame 2 ≈ frame 4 au lieu d'alterner) — un biais de latéralité impossible à corriger frame par frame puisque les images sont livrées ensemble ; la seule option était de tout regénérer en bloc, sans savoir laquelle des 4 corriger.
+2. **Séquence de réaction de Radar en 12 frames** (test "top qualité", chaînage frame par frame) : 3 corrections ponctuelles ont été nécessaires en cours de route (amplitude d'expression à recadrer après une frame allée plus loin que prévu, recul du buste invisible avec une consigne abstraite corrigé par un repère concret, et une frame où le modèle avait réinitialisé vers une posture neutre au lieu de poursuivre la progression). Chacune de ces corrections n'a été possible que parce que chaque frame est vérifiée et ajustée individuellement avant de continuer la chaîne — impossible à rattraper si les 12 images avaient été générées d'un coup dans une seule planche.
+
+En résumé : la génération groupée fait gagner du temps mais fige les défauts dans la planche entière sans possibilité de correction ciblée. Le chaînage frame par frame coûte plus de temps mais permet exactement ce niveau de contrôle — à réserver donc aux séquences où la qualité finale compte vraiment.
+
 ## Astuce : miroir horizontal par image de référence
 
 Le modèle a du mal à alterner correctement une jambe/un bras gauche-droite sur une consigne purement textuelle (biais constaté sur le cycle de marche de Racine : la même jambe se relève à chaque fois malgré des consignes explicites répétées). Solution plus fiable : fournir en référence l'image déjà générée de la pose (ex : jambe droite levée) et demander explicitement son **miroir horizontal exact** plutôt qu'une nouvelle interprétation textuelle de la pose inverse. Le modèle inverse alors toute l'image de façon cohérente (jambe, bras, accessoires asymétriques compris), ce qui garantit une géométrie correcte. Accepter que les accessoires asymétriques (ex : main tenant un bâton) changent de côté dans ce cas, sauf si la fiche personnage fige explicitement une main précise.
